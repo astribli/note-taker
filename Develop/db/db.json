@@ -1,1 +1,19 @@
-[{"title":"Test Title","text":"Test text"}]
+{
+  "notes": [
+    {
+      "title": "Paint Pumpkins",
+      "text": "Paint pumkin blue"
+    },
+    [
+      {
+        "title": "Get Beer",
+        "text": "Buy Stella"
+      }
+    ],
+    {
+      "title": "Hollar",
+      "text": "Hello",
+      "id": "2"
+    }
+  ]
+}
