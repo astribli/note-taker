@@ -1,19 +1,14 @@
 {
-  "notes": [
-    {
-      "title": "Paint Pumpkins",
-      "text": "Paint pumkin blue"
-    },
-    [
-      {
-        "title": "Get Beer",
-        "text": "Buy Stella"
-      }
-    ],
-    {
-      "title": "Hollar",
-      "text": "Hello",
-      "id": "2"
-    }
-  ]
+    "notes": [
+        {
+            "title": "Get Beer",
+            "text": "Buy Stella",
+            "id": 0
+        },
+        {
+            "title": "Paint Pumkins",
+            "text": "Paint them blue",
+            "id": "1"
+        }
+    ]
 }

@@ -13,6 +13,13 @@ function createNewNote(body, notesArray) {
     return note;
 };
 
+function updateNotes() {
+    fs.writeFile("db/db.json",JSON.stringify(notes,'\t'),err => {
+        if (err) throw err;
+        return true;
+    });
+};
+
 router.get("/notes", (req, res) => {
     let results = notes;
     res.json(results);
@@ -26,6 +33,11 @@ router.post("/notes", (req, res) => {
     res.json(note);
 });
 
+router.delete("/notes/:id", function(req, res) {
+    notes.splice(req.params.id, 1);
+    updateNotes();
+    console.log("Deleted note with id "+req.params.id);
+});
 
 
 module.exports = router;
